@@ -18,3 +18,6 @@
 - 현재 로그인된 사용자와 동일한 북마크를 갖는 다른 사용자들을 찾은 후 
 그들이 등록한 다른 북마크를 추천. 
 (단, 최소 두 명 이상의 다른 사용자들이 등록한 북마크만 추천)
+
+## Flow Chart
+<p align="center"><img src="./flow_chart.jpg" alt="flow_chart image" style="height: 400px; width:300px;"/></p>
