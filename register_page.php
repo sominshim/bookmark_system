@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,14 +33,22 @@
 
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" class="form-control" placeholder="Password" pattern="{6,64}" name="user_pwd" required>
+                <input type="password" class="form-control" placeholder="Password" pattern="{6,64}" name="password" required>
             </div>
             <div class="form-group">
                 <label>Confirm Password</label>
-                <input type="password" class="form-control" placeholder="Password" pattern="{6,64}" name="password_repeat" required>
+                <input type="password" class="form-control" placeholder="Confirm Password" pattern="{6,64}" name="password_confirm" required>
             </div>
 
             <button type="submit" class="btn btn-black" value="Register">Register</button>
+            <?php
+                if ( $duplicated = True ) {
+                    echo "<p>사용자이름이 중복되었습니다.</p>";
+                }
+                if ( $confirm_pwd = False ) {
+                    echo "<p>비밀번호가 일치하지 않습니다.</p>";
+                }
+            ?>
         </form>
     </div>
     </div>
